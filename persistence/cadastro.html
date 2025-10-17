@@ -43,18 +43,24 @@
                             <h3 class="panel-title">Cadastro</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="/controller/cadastro.controller.php" method="post">
+                            <form role="form" action="controller/cadastro.controller.php" method="post">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="Nome" id="Nome"
                                                 class="form-control input-sm floatlabel" placeholder="Nome">
+                                                <?php if (isset($_GET['error']) && $_GET['error'] == 'nome') {
+                                                    echo '<span style="color:red;">Nome inválido</span>';
+                                                } ?>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="Sobrenome" id="Sobrenome"
                                                 class="form-control input-sm" placeholder="Sobrenome">
+                                                <?php if (isset($_GET['error']) && $_GET['error'] == 'sobrenome') {
+                                                    echo '<span style="color:red;">Sobrenome inválido</span>';
+                                                } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -62,6 +68,9 @@
                                 <div class="form-group">
                                     <input type="email" name="email" id="email" class="form-control input-sm"
                                         placeholder="Endereço de Email">
+                                        <?php if (isset($_GET['error']) && $_GET['error'] == 'email') {
+                                            echo '<span style="color:red;">Email inválido</span>';
+                                        } ?>
                                 </div>
                                 <br>
                                 <div class="row">
@@ -69,6 +78,9 @@
                                         <div class="form-group">
                                             <input type="password" name="Senha" id="Senha"
                                                 class="form-control input-sm" placeholder="Senha">
+                                                <?php if (isset($_GET['error']) && $_GET['error'] == 'senha') {
+                                                    echo '<span style="color:red;">Senha inválida</span>';
+                                                } ?>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -76,11 +88,19 @@
                                             <input type="password" name="Senha_confirmation"
                                                 id="Senha_confirmation" class="form-control input-sm"
                                                 placeholder="Confirme a Senha">
+                                                <?php if (isset($_GET['error']) && $_GET['error'] == 'senha_confirmation') {
+                                                    echo '<span style="color:red;">As senhas não coincidem</span>';
+                                                } ?>
                                         </div>
                                     </div>
                                 </div>
                                 <br>
                                 <input type="submit" value="Cadastrar" class="btn btn-info btn-block col-md-6 ">
+                                <input type="hidden" name="error" value="<?php echo isset($_GET['error']) ? $_GET['error'] : ''; ?>">
+                                <?php
+                                if (isset($_GET['success']) && $_GET['success'] == '1') {
+                                    echo '<span style="color:green;">Cadastro realizado com sucesso!</span>';
+                                }
                             </form>
                         </div>
                     </div>
