@@ -1,11 +1,11 @@
 <?php
-$servidor = "localhost";
+$servidor = "localhost";    
 $usuario = "root";
-$senha = "";
-$banco = "projetoWeb";
+$senha = "Senha20@";
+$banco = "projeto_web";
+$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
-$conn = mysqli_connect($servidor, $usuario, $senha, $banco);
-if (!$conn) {
+if (!$conexao) {
     die("Conexão falhou: " . mysqli_connect_error());
-}   
-
+} 
+?>
