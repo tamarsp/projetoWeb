@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (isset($_SESSION['erro'])) {
+    echo '<span style="color:red;">' . $_SESSION['erro'] . '</span>';
+    unset($_SESSION['erro']);
+}
+if (isset($_SESSION['sucesso'])) {
+    echo '<span style="color:green;">' . $_SESSION['sucesso'] . '</span>';
+    unset($_SESSION['sucesso']);
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +37,7 @@
                         <a class="nav-link" href="/persistence/Informacao.html">Informações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.html">Contato</a>
+                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +54,7 @@
                             <h3 class="panel-title">Cadastro</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="controller/cadastro.controller.php" method="post">
+                            <form role="form" action="../controller/cadastroController.php" method="post">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
@@ -101,6 +112,7 @@
                                 if (isset($_GET['success']) && $_GET['success'] == '1') {
                                     echo '<span style="color:green;">Cadastro realizado com sucesso!</span>';
                                 }
+                                ?>
                             </form>
                         </div>
                     </div>

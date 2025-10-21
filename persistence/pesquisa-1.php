@@ -29,7 +29,7 @@
                         <a class="nav-link" href="/persistence/pesquisa-2.html">Segunda Pesquisa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.html">Contato</a>
+                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
                     </li>
                 </ul>
             </div>

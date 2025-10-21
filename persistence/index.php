@@ -33,7 +33,7 @@ if(isset($_SESSION['usuario'])){
                         <a class="nav-link" href="/persistence/cadastro.html">Cadastro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.html">Contato</a>
+                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@ if(isset($_SESSION['usuario'])){
                                 </div>
                                 <div id="register-link" class="text-right">
                                     <button type="submit" class="btn btn-info">Login</button>
-                                    <a href="/persistence/cadastro.html" class="text-info">Cadastrar-se</a>
+                                    <a href="cadastro.php" class="text-info">Cadastrar-se</a>
                                 </div>
                              
                             </form>

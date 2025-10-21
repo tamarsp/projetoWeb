@@ -26,7 +26,7 @@
                         <a class="nav-link" href="/persistence/Informacao.html">Informações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.html">Contato</a>
+                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="well well-sm">
-                        <form class="form-horizontal" action="" method="post">
+                        <form class="form-horizontal" action="/controller/contatoController.php" method="post">
                             <fieldset> <!--<fieldset> é usado para agrupar elementos relacionados dentro de um formulário HTML, criando visualmente uma "caixa" ou "seção"-->
                                 <legend class="text-center">Entre em contato</legend>
 
