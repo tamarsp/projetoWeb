@@ -79,7 +79,7 @@ if (isset($_SESSION['sucesso'])) {
                                 <div class="form-group">
                                     <input type="email" name="email" id="email" class="form-control input-sm"
                                         placeholder="Endereço de Email" required>
-                                        <?php if (isset($_GET['error']) && $_GET['error'] == 'email') {
+                                        <?php if (isset($_GET['error']) && $_GET['error'] === 'email') {
                                             echo '<span style="color:red;">Email inválido</span>';
                                         } ?>
                                 </div>

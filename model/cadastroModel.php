@@ -10,11 +10,11 @@ class cadastroModel{
     public function cadastrar($nome, $sobrenome, $email, $senha){
 
         $senhaHash = password_hash($senha, PASSWORD_BCRYPT);
-        $sql = "INSERT INTO usuarios (Nome, Sobrenome, Email, Senha) VALUES (:Nome, :Sobrenome, :Email, :Senha)";
+        $sql = "INSERT INTO usuarios (Nome, Sobrenome, email, Senha) VALUES (:Nome, :Sobrenome, :email, :Senha)";
         $stmt = $this->con->prepare($sql);
         $stmt->bindParam(':Nome', $nome);
         $stmt->bindParam(':Sobrenome', $sobrenome);
-        $stmt->bindParam(':Email', $email);
+        $stmt->bindParam(':email', $email);
         $stmt->bindParam(':Senha', $senha);
         $stmt->execute();
 
