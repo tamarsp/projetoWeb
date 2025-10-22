@@ -39,15 +39,27 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="well well-sm">
-                        <form class="form-horizontal" action="/controller/contatoController.php" method="post">
+                        <?php
+                        session_start();
+                        if (isset($_SESSION['sucesso'])) {
+                            echo "<div class='alert alert-success'>{$_SESSION['sucesso']}</div>";
+                            unset($_SESSION['sucesso']);
+                        }
+                        if (isset($_SESSION['erro'])) {
+                            echo "<div class='alert alert-danger'>{$_SESSION['erro']}</div>";
+                            unset($_SESSION['erro']);
+                        }
+                        ?>
+
+                        <form class="form-horizontal" action="../controller/contatoController.php" method="post">
                             <fieldset> <!--<fieldset> é usado para agrupar elementos relacionados dentro de um formulário HTML, criando visualmente uma "caixa" ou "seção"-->
                                 <legend class="text-center">Entre em contato</legend>
 
                                 <!-- Nome-->
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="name">Nome</label>
+                                    <label class="col-md-3 control-label" for="nome">Nome</label>
                                     <div class="col-md-9">
-                                        <input id="name" name="name" type="text" placeholder="Seu nome"
+                                        <input id="nome" name="nome" type="text" placeholder="Seu nome"
                                             class="form-control">
                                     </div>
                                 </div>
@@ -63,9 +75,9 @@
 
                                 <!-- Mensagem -->
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label" for="message">Sua mensagem</label>
+                                    <label class="col-md-3 control-label" for="mensagem">Sua mensagem</label>
                                     <div class="col-md-9">
-                                        <textarea class="form-control" id="message" name="message"
+                                        <textarea class="form-control" id="mensagem" name="mensagem"
                                             placeholder="Por favor, insira sua mensagem aqui..." rows="5"></textarea>
                                     </div>
                                 </div>
