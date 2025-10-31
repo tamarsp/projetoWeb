@@ -30,6 +30,41 @@
     </head>
     <main>
         <h1>Segunda pesquisa</h1>
+        <form action="">
+            <div>
+                <label for="">
+                    <div>
+                        <p>Qual o fator que mais influenciou a sua escolha pelo curso de tecnologia?</p>
+                        <input type="radio" name="" id="" value="">Alta empregabilidade e perspetivas salariais elevadas (motivação económica)
+                        <input type="radio" name="" id="" value="">Forte interesse e paixão pela tecnologia (motivação pessoal)
+                        <input type="radio" name="" id="" value="">Necessidade de mudar de carreira/progressão na carreira atual
+                        <input type="radio" name="" id="" value="">Facilidade de acesso ao curso (proximidade, nota de corte)
+                    </div>
+                    <div>
+                        <p>O curso de tecnologia representa uma oportunidade de melhorar significativamente a sua condição socioeconómica e a da sua família?</p>
+                        <input type="radio" nome="" id="" value="">Sim, com certeza
+                        <input type="radio" nome="" id="" value="">Provavelmente sim
+                        <input type="radio" nome="" id="" value="">Não tenho certeza
+                        <input type="radio" nome="" id="" value="">Não, provavelmente não
+                    </div>
+                    <div>
+                        <p>Qual foi a maior dificuldade de natureza socioeconómica que enfrentou (ou enfrenta) para se manter no curso?</p>
+                        <input type="radio" nome="" id="" value="">Custos do curso (propinas, mensalidades)
+                        <input type="radio" nome="" id="" value="">Custos de transporte e material
+                        <input type="radio" nome="" id="" value="">Necessidade de trabalhar para sustentar a família/os estudos (falta de tempo)
+                        <input type="radio" nome="" id="" value="">Falta de equipamentos ou acesso à internet de qualidade
+                        <input type="radio" nome="" id="" value="">Não enfrentei grandes dificuldades desta natureza
+                    </div>
+                    <div>
+                        <p>Beneficia (ou beneficiou) de algum programa de apoio/assistência estudantil (bolsas de estudo, auxílio financeiro, auxílio-alimentação)?</p>
+                        <input type="radio" nome="" id="" value="">Sim, bolsa/apoio do governo/estado
+                        <input type="radio" nome="" id="" value="">Sim, bolsa/apoio da própria instituição
+                        <input type="radio" nome="" id="" value="">Não, mas gostaria/precisava
+                        <input type="radio" nome="" id="" value="">Não
+                    </div>
+                </label>
+            </div>
+        </form>
     </main>
 </body>
 </html>
