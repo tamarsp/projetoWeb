@@ -42,15 +42,15 @@
             <div>
                 <label for="" class="row ">
                     <div class="form-radio mb-3 col lg-3">
-                    <p>Idade</p>
-                    <input class="form-check-input mb-3"  type="radio" name="idade" value="18-25"> 18-25
-                    <input class="form-check-input mb-3"  type="radio" name="idade" value="26-35"> 26-35
-                    <input class="form-check-input mb-3"  type="radio" name="idade" value="36-45"> 36-45
-                    <input class="form-check-input mb-3"  type="radio" name="idade" value="46-55"> 46-55
-                    <input class="form-check-input mb-3"  type="radio" name="idade" value="56+"> 56+
+                    <p>Informe sua idade</p>
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="18-25"> 18-25 <br>
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="26-35"> 26-35<br>
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="36-45"> 36-45<br>
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="46-55"> 46-55<br>
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="56+"> 56+<br>
                     </div>
                     <div class="mb-3">
-                    <p>Gênero</p>
+                    <p>Informe seu gênero</p>
                     <select name="genero" id="genero" class="">
                         <option class=".form-check row row-cols-auto g-2" value="masculino">Masculino</option>
                         <option class=".form-check row row-cols-auto g-2" value="feminino">Feminino</option>
@@ -69,45 +69,45 @@
                     </div>
                     <div class="mb-3">
                         <p>Onde concluiu a maior parte do ensino médio?</p>
-                        <input type="radio" name="escola" value="Publica">Escola Publica 
-                        <input type="radio" name="escola" value="Particular">Escola Particular
+                        <input type="radio" name="escola" value="Publica">Escola Publica <br>
+                        <input type="radio" name="escola" value="Particular">Escola Particular<br>
                     </div>
                     <div class="mb-3">
                         <p>Qual a sua situação em relação ao trabalho?</p>
-                        <input type="radio" name="Trabalho" value="nao_Trabalha">Não trabalha
-                        <input type="radio" name="Trabalho" value="Tr">Esta trabalhando                        
+                        <input type="radio" name="Trabalho" value="nao_Trabalha">Não trabalha<br>
+                        <input type="radio" name="Trabalho" value="Tr">Esta trabalhando   <br>                     
                     </div>
                     <div>
                         <p></p>
                     </div>
-                    <div>
+                    <div class="mb-3 ">
                         <p>Qual o fator que mais influenciou a sua escolha pelo curso de tecnologia?</p>
-                        <input type="radio" name="fator_escolha" value="empregabilidade">Alta empregabilidade e perspetivas salariais elevadas (motivação económica)
-                        <input type="radio" name="fator_escolha" value="interesse">Forte interesse e paixão pela tecnologia (motivação pessoal)
-                        <input type="radio" name="fator_escolha" value="mudancaCarreira">Necessidade de mudar de carreira/progressão na carreira atual
-                        <input type="radio" name="fator_escolha" value="facilidadeAcesso">Facilidade de acesso ao curso (proximidade, nota de corte)
+                        <input type="radio" name="fator_escolha" value="empregabilidade">Alta empregabilidade e perspetivas salariais elevadas (motivação económica)<br>
+                        <input type="radio" name="fator_escolha" value="interesse">Forte interesse e paixão pela tecnologia (motivação pessoal)<br>
+                        <input type="radio" name="fator_escolha" value="mudancaCarreira">Necessidade de mudar de carreira/progressão na carreira atual<br>
+                        <input type="radio" name="fator_escolha" value="facilidadeAcesso">Facilidade de acesso ao curso (proximidade, nota de corte)<br>
                     </div>
-                    <div>
+                    <div class="mb-3 ">
                         <p>O curso de tecnologia representa uma oportunidade de melhorar significativamente a sua condição socioeconómica e a da sua família?</p>
-                        <input type="radio" nome="Oportunidade" value="sim_certeza">Sim, com certeza
-                        <input type="radio" nome="Oportunidade" value="provavelmente_sim">Provavelmente sim
-                        <input type="radio" nome="Oportunidade" value="nao_certeza">Não tenho certeza
-                        <input type="radio" nome="Oportunidade" value="nao_provavelmente">Não, provavelmente não
+                        <input type="radio" name="Oportunidade" value="sim_certeza">Sim, com certeza<br>
+                        <input type="radio" name="Oportunidade" value="provavelmente_sim">Provavelmente sim<br>
+                        <input type="radio" name="Oportunidade" value="nao_certeza">Não tenho certeza<br>
+                        <input type="radio" name="Oportunidade" value="nao_provavelmente">Não, provavelmente não<br>
                     </div>
-                    <div>
+                    <div class="mb-3 ">
                         <p>Qual foi a maior dificuldade de natureza socioeconómica que enfrentou (ou enfrenta) para se manter no curso?</p>
-                        <input type="radio" nome="dificuldade" value="custo_curso">Custos do curso (propinas, mensalidades)
-                        <input type="radio" nome="dificuldade" value="transporteMaterial">Custos de transporte e material
-                        <input type="radio" nome="dificuldade" value="faltaTempo">Necessidade de trabalhar para sustentar a família/os estudos (falta de tempo)
-                        <input type="radio" nome="dificuldade" value="internetEquipamentos">Falta de equipamentos ou acesso à internet de qualidade
-                        <input type="radio" nome="dificuldade" value="nenhuma">Não enfrentei grandes dificuldades desta natureza
+                        <input type="radio" name="dificuldade" value="custo_curso">Custos do curso (propinas, mensalidades)<br>
+                        <input type="radio" name="dificuldade" value="transporteMaterial">Custos de transporte e material<br>
+                        <input type="radio" name="dificuldade" value="faltaTempo">Necessidade de trabalhar para sustentar a família/os estudos (falta de tempo)<br>
+                        <input type="radio" name="dificuldade" value="internetEquipamentos">Falta de equipamentos ou acesso à internet de qualidade<br>
+                        <input type="radio" name="dificuldade" value="nenhuma">Não enfrentei grandes dificuldades desta natureza<br>
                     </div>
-                    <div>
+                    <div class="mb-3 ">
                         <p>Beneficia (ou beneficiou) de algum programa de apoio/assistência estudantil (bolsas de estudo, auxílio financeiro, auxílio-alimentação)?</p>
-                        <input type="radio" nome="apoio" value="sim_bolsagov">Sim, bolsa/apoio do governo/estado
-                        <input type="radio" nome="apoio" value="sim_bolsafacul">Sim, bolsa/apoio da própria instituição
-                        <input type="radio" nome="apoio" value="nao_masQueria">Não, mas gostaria/precisava
-                        <input type="radio" nome="apoio" value="nao">Não
+                        <input type="radio" name="apoio" value="sim_bolsagov">Sim, bolsa/apoio do governo/estado<br>
+                        <input type="radio" name="apoio" value="sim_bolsafacul">Sim, bolsa/apoio da própria instituição<br>
+                        <input type="radio" name="apoio" value="nao_masQueria">Não, mas gostaria/precisava<br>
+                        <input type="radio" name="apoio" value="nao">Não<br>
                     </div>
                 </label>
                 <div>
