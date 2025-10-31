@@ -36,25 +36,25 @@
         </nav>
     </head>
     <main>
-        <h1>Primeira pesquisa</h1>
+        <h1>Pesquisa</h1>
         <!--Inicio da pesquisa -->
-        <form action="" method="post" class="row row-cols-lg-auto g-3 align-items-center ">
+        <form action="" method="post" class="form-control container align-items-center ">
             <div>
-                <label for="" class="">
-                    <div class="form-radio mb-3">
+                <label for="" class="row ">
+                    <div class="form-radio mb-3 col lg-3">
                     <p>Idade</p>
-                    <input type="radio" name="idade" value="18-25"> 18-25
-                    <input type="radio" name="idade" value="26-35"> 26-35
-                    <input type="radio" name="idade" value="36-45"> 36-45
-                    <input type="radio" name="idade" value="46-55"> 46-55
-                    <input type="radio" name="idade" value="56+"> 56+
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="18-25"> 18-25
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="26-35"> 26-35
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="36-45"> 36-45
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="46-55"> 46-55
+                    <input class="form-check-input mb-3"  type="radio" name="idade" value="56+"> 56+
                     </div>
                     <div class="mb-3">
                     <p>Gênero</p>
                     <select name="genero" id="genero" class="">
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                        <option value="outro">Outro</option>
+                        <option class=".form-check row row-cols-auto g-2" value="masculino">Masculino</option>
+                        <option class=".form-check row row-cols-auto g-2" value="feminino">Feminino</option>
+                        <option class=".form-check row row-cols-auto g-2" value="outro">Outro</option>
                     </select>
                     </div>
                     <div class="mb-3">
@@ -111,7 +111,7 @@
                     </div>
                 </label>
                 <div>
-                    <button class="" type="submit">Enviar</button>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
                 </div>
             </div>
         </form>
