@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,7 +30,7 @@
                         <a class="nav-link" href="/persistence/pesquisa-2.html">Segunda Pesquisa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
+                        <a class="nav-link" href="/persistence/sair.php">Sair</a>
                     </li>
                 </ul>
             </div>

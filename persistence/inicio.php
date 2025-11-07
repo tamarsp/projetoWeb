@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,7 +30,7 @@
                         <a class="nav-link" href="pesquisa-2.php">Segunda Pesquisa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.php">Contato</a>
+                        <a class="nav-link" href="sair.php">Sair</a>
                     </li>
                 </ul>
             </div>
