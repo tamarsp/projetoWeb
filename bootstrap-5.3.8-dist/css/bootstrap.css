@@ -8864,6 +8864,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-body-wyden {
+  --bs-bg-opacity: 1;
+  background-color: rgba(136, 0, 91) !important;
+}
+
 .bg-opacity-10 {
   --bs-bg-opacity: 0.1;
 }
