@@ -1,0 +1,7 @@
+.pergunta { 
+    display: none; 
+}
+
+.pergunta.ativa { 
+    display: block; 
+}
