@@ -38,13 +38,13 @@ if (isset($_SESSION['sucesso'])) {
                 <ul class="nav justify-content-center">
                    <img src="" alt="">
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/index.html">Login</a>
+                        <a class="nav-link" href="/persistence/index.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/persistence/Informacao.html">Informações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/contato.php">Contato</a>
+                        <a class="nav-link" href="/persistence/cadastro.php">Contato</a>
                     </li>
                 </ul>
             </div>
