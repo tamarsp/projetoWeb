@@ -22,6 +22,9 @@ if (isset($_SESSION['sucesso'])) {
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assents/css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,16 +54,16 @@ if (isset($_SESSION['sucesso'])) {
     <main>
         <!--Inicio cadastro-->
         <div class="container">
-            <div class="row centered-form">
+            <div class="row centered-form caixa">
                 <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default caixa">
                         <div class="panel-heading">
                             <h3 class="panel-title">Cadastro</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="../controller/cadastroController.php" method="post">
+                            <form role="form" action="../controller/cadastroController.php" method="post" class="layout-centered">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 ">
                                         <div class="form-group">
                                             <input type="text" name="Nome" id="Nome"
                                                 class="form-control input-sm floatlabel" placeholder="Nome" required>
