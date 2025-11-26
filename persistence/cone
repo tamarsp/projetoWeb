@@ -1,0 +1,19 @@
+<?php
+/*$host = "localhost";
+$user = "root";
+$pass = "Senha20@";
+$name = "projetoWeb";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$name;charset=utf8mb4", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro de conexão: " . $e->getMessage());
+}*/
+
+$mysqli = new mysqli("localhost", "root", "Senha20@", "projetoWeb");
+
+if ($mysqli->connect_error) {
+    die("Erro de conexão: " . $mysqli->connect_error);
+}
+// e so uma forma de guar esta conexao nao é precisa usar

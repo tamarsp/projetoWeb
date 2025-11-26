@@ -1,21 +1,32 @@
 <?php
-session_start();
-/*$host = "localhost";
-$user = "root";
-$pass = "Senha20@";
-$name = "projetoWeb";
+class Conexao {
+    private static $instance;
+    private $conexao;
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$name;charset=utf8mb4", $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Erro de conexão: " . $e->getMessage());
-}*/
+    private function __construct() {
+        $localhost = 'localhost';
+        $dbname = 'projetoWeb';
+        $username = 'root';
+        $password = 'Senha20@';
 
-$mysqli = new mysqli("localhost", "root", "Senha20@", "projetoWeb");
-
-if ($mysqli->connect_error) {
-    die("Erro de conexão: " . $mysqli->connect_error);
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+        try {
+            $this->conexao = new PDO("mysql:host=$localhost;dbname=$dbname;charset=utf8", $username, $password);
+            $this->conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            echo "Erro na conexão: " . $e->getMessage();
+            exit;
+        }
 }
 
-?>
+    public static function getInstance() {
+        if (!isset(self::$instance)) {
+            self::$instance = new Conexao();
+        }
+        return self::$instance;
+    }
+
+    public function getConnection() {
+        return $this->conexao;
+    }
+}
