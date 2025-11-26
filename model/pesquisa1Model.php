@@ -9,18 +9,23 @@ class pesquisa1Model {
         $this->con = Conexao::getInstance()->getConnection();
     }
 
-    public function salvarPesquisa($idade, $genero, $frequencia, $satisfacao, $melhoria, $comentarios) {
-        $sql = "INSERT INTO pesquisa1 (idade, genero, frequencia, satisfacao, melhoria, comentarios) 
-                VALUES (:idade, :genero, :frequencia, :satisfacao, :melhoria, :comentarios)";
-        
+    public function salvarPesquisa($idade, $genero, $autodeclaracao, $escola, 
+            $trabalho, $fator_escolha, $oportunidade, 
+            $dificuldade, $apoio) {
+        $sql = "INSERT INTO pesquisa1 (idade, genero, autodeclaracao, escola, trabalho, 
+                fator_escolha, oportunidade, dificuldade, apoio) 
+                VALUES (:idade, :genero, :autodeclaracao, :escola, :trabalho, 
+                :fator_escolha, :oportunidade, :dificuldade, :apoio)";
         $stmt = $this->con->prepare($sql);
-
-        $stmt->bindParam(':idade', $idade);
+        $stmt->bindParam(':idade', $idade); 
         $stmt->bindParam(':genero', $genero);
-        $stmt->bindParam(':frequencia', $frequencia);
-        $stmt->bindParam(':satisfacao', $satisfacao);
-        $stmt->bindParam(':melhoria', $melhoria);
-        $stmt->bindParam(':comentarios', $comentarios);
+        $stmt->bindParam(':autodeclaracao', $autodeclaracao);
+        $stmt->bindParam(':escola', $escola);
+        $stmt->bindParam(':trabalho', $trabalho);
+        $stmt->bindParam(':fator_escolha', $fator_escolha);
+        $stmt->bindParam(':oportunidade', $oportunidade);
+        $stmt->bindParam(':dificuldade', $dificuldade);
+        $stmt->bindParam(':apoio', $apoio);
 
         if ($stmt->execute()) {
             return $this->con->lastInsertId(); // retorna ID inserido
