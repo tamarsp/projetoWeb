@@ -23,6 +23,13 @@ class cadastroController {//declaração de uma classse
         header("Location: ../persistence/cadastro.php");
         exit();
     }
+        //Valida o formato do email. Se for inválido, mostra o erro e volta para cadastro
+        //email valido como gmail.com, yahoo.com, hotmail.com, outlook.com
+        /*if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $_SESSION['erro'] = "Digite um e-mail válido!";
+            header("Location: ../persistence/cadastro.php");
+            exit();
+        }*/
         //Confere se as duas senhas são iguais. Se não forem, mostra o erro e volta para cadastro
         
         if ($senha !== $confirmarSenha) {

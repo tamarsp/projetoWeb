@@ -95,7 +95,7 @@ if (isset($_SESSION['sucesso'])) {
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <input type="password" name="Senha" id="Senha"
-                                                class="form-control input-sm" placeholder="Senha" required>
+                                                class="form-control input-sm" placeholder="Senha" required minlength="8">
                                                 <?php if (isset($_GET['error']) && $_GET['error'] == 'senha') {
                                                     echo '<span style="color:red;">Senha inválida</span>';
                                                 } ?>

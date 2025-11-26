@@ -28,9 +28,20 @@ class pesquisa1Model {
         $stmt->bindParam(':apoio', $apoio);
 
         if ($stmt->execute()) {
-            return $this->con->lastInsertId(); // retorna ID inserido
+            return $this->con->lastInsertId();
         } else {
             return false;
         }
+    }
+
+    // método útil para agregar dados para os gráficos
+    public function contarPorCampo($campo) {
+        $allowed = ['idade','genero','autodeclaracao','escola','trabalho','fator_escolha','oportunidade','dificuldade','apoio'];
+        if (!in_array($campo, $allowed)) throw new Exception("Campo inválido");
+
+        $sql = "SELECT {$campo} AS valor, COUNT(*) AS total FROM pesquisa1 GROUP BY {$campo} ORDER BY total DESC";
+        $stmt = $this->con->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
