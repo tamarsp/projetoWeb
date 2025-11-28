@@ -1,0 +1,10 @@
+body{
+    background-color: #e9e9e9;
+    font-family: 'Merriweather', sans-serif;
+    background-size: cover;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
