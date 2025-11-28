@@ -43,7 +43,7 @@ session_start();
         </nav>
     </head>
     <main>
-        <h1>Pesquisa</h1>
+        <h1 class="mb-4">Pesquisa</h1>
         <!--Inicio da pesquisa -->
         <form action="" method="post" class="form-control container align-items-center " id="pesquisaForm">
             <div>
