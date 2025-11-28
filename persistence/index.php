@@ -52,7 +52,7 @@ if(isset($_SESSION['usuario'])){
         
         <!--Inicio login-->
         <div id="login ">
-            <h1 class="text-center pt-5">Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
+            <h1 class="text-center pt-5 text-info">Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
             <div class="container mt-5 mb-5 p-4 rounded-3 bg-light shadow" style="max-width: 600px;">
                 <div id="login-row" class="row justify-content-center align-items-center h-100 ">
                     <div id="login-column" class="col-md-6">
@@ -80,7 +80,7 @@ if(isset($_SESSION['usuario'])){
                                     <span class="text-danger">
                                 </div>
                                 <div id="register-link" class="text-right">
-                                    <button type="submit" class="btn btn-info">Login</button>
+                                    <button type="submit" class="btn btn-info btn-block col-md-6 ">Login</button>
                                     <a href="cadastro.php" class="text-info">Cadastrar-se</a>
                                 </div>
                              

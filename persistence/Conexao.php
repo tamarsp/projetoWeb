@@ -7,7 +7,7 @@ class Conexao {
         $localhost = 'localhost';
         $dbname = 'projetoWeb';
         $username = 'root';
-        $password = '';
+        $password = 'Senha20@';
 
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         try {
