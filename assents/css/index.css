@@ -28,6 +28,33 @@ body {
     font-size: 1.5rem;
 }  
 
+.btn-info {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+     
+
+}
+
+.btn-info:hover {
+    background-color: #2980b9;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: auto;
+    color: #2980b9;
+}
 
 /* Preloader Styles - manter no final*/
 .preloader {

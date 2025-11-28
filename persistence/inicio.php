@@ -8,9 +8,10 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório</title>
+    <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assents/css/inicio.css">
 </head>
 
 <body>
@@ -37,8 +38,8 @@ session_start();
         </nav>
     </head>
     <main>
-        <div class="container mt-4 mb-4 p-4 rounded-3 ">
-            <h1>Inicio</h1>
+        <div class="container mt-4 mb-4 p-4 rounded-3 bg-light shadow" style="max-width: 800px;">
+            <h1>Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
             <p>pagina inicial com informações relevantes.</p>
             <h2>Pesquisa socioeconômica</h2>
             <p>Esta pesquisa tem como intuito coletar dados sobre a situação dos alunos da UniRuy.</p><br>

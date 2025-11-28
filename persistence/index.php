@@ -11,7 +11,7 @@ if(isset($_SESSION['usuario'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Login</title>
     <link href="../bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -27,7 +27,7 @@ if(isset($_SESSION['usuario'])){
 
     <header>
         <!--Inicio do menu-->
-        <nav class="navbar navbar-expand-lg bg-body-wyden">
+        <nav class="navbar navbar-expand-lg bg-body-wyden container-fluid">
             <div style="justify-content:space-between;">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -52,9 +52,9 @@ if(isset($_SESSION['usuario'])){
         
         <!--Inicio login-->
         <div id="login">
-            <h1 class="text-center text-white pt-5">Pesquisas</h1>
-            <div class="container">
-                <div id="login-row" class="row justify-content-center align-items-center">
+            <h1 class="text-center pt-5">Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
+            <div class="container mt-5 mb-5 p-4 rounded-3 bg-light shadow" style="max-width: 600px;">
+                <div id="login-row" class="row justify-content-center align-items-center h-100 ">
                     <div id="login-column" class="col-md-6">
                         <div id="login-box" class="col-md-12">
                             <?php
@@ -67,10 +67,10 @@ if(isset($_SESSION['usuario'])){
                                 }
                             }
                             ?>
-                            <form id="login-form" class="form" action="../controller/loginController.php" method="post">
+                            <form id="login-form" class="form " action="../controller/loginController.php" method="post">
                                 <h3 class="text-center text-info">Login</h3>
                                 <div class="form-group">
-                                    <label for="Email" class="text-info">Email:</label><br>
+                                    <label for="Email" class="text-info ">Email:</label><br>
                                     <input type="text" name="email" id="Email" class="form-control" required>
                                     <span class="text-danger">
                                 </div>
