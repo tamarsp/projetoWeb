@@ -40,7 +40,6 @@ session_start();
     <main>
         <div class="container mt-4 mb-4 p-4 rounded-3 bg-light shadow" style="max-width: 800px;">
             <h1>Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
-            <p>pagina inicial com informações relevantes.</p>
             <h2>Pesquisa socioeconômica</h2>
             <p>Esta pesquisa tem como intuito coletar dados sobre a situação dos alunos da UniRuy.</p><br>
             <p>Sobre a pesquisa:</p>
@@ -51,9 +50,11 @@ session_start();
             </ul>
             <h3>Escolha uma pesquisa</h3>
             <ol>
-                <li><a href="/persistence/pesquisa1.html">Primeira Pesquisa</a></li>
-                <li><a href="/persistence/pesquisa2.html">Segunda Pesquisa</a></li>
+                <li><a href="/persistence/pesquisa-1.php">Primeira Pesquisa</a></li>
+           
             </ol>
+
+            <p>No momento, esta é a única pesquisa disponível.</p>
         </div>
 
     </main>
