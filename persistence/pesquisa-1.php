@@ -43,9 +43,10 @@ session_start();
         </nav>
     </head>
     <main>
-        <h1 class="mb-4">Pesquisa</h1>
+        
         <!--Inicio da pesquisa -->
-        <form action="" method="post" class="form-control container align-items-center " id="pesquisaForm">
+        <form action="" method="post" class="form-control container align-items-center  " id="pesquisaForm">
+            <h1 class="mb-4">Pesquisa</h1>
             <div>
                 <label for="" class="row ">
                     <div class="form-radio mb-3 col lg-3 pergunta ativa" onkeyup="alterarProgresso()">
