@@ -27,17 +27,15 @@ session_start();
                 <ul class="nav justify-content-center">
                     <img src="" alt="">
                     <li>
-                        <a class="nav-link" href="/persistence/inicio.php">Inicio</a>
+                        <a class="nav-link" href="inicio.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/relatorio.html">Relatório</a>
+                        <a class="nav-link" href="relatorio.html">Relatório</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/persistence/pesquisa-1.html">Pesquisa</a>
+                        <a class="nav-link" href="pesquisa-1.php">Pesquisa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/persistence/sair.php">Sair</a>
-                    </li>
+                
                 </ul>
             </div>
         </nav>

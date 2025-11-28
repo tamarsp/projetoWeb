@@ -5,6 +5,13 @@ body {
     background-size: cover; 
 }  
 
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
 .navbar {
     background-color: #f8f9fa;
 }
@@ -12,6 +19,11 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
 } 
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #e2e6ea;
+    border-radius: 5px;
+}
 
 h1 {
     font-size: 2.5rem;

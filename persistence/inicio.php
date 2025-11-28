@@ -20,19 +20,17 @@ session_start();
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div>
                 <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <img src="" alt="">
-                        <a href="/persistence/inicio.html"></a>
+                    
+                    <li>
+                        <a class="nav-link" href="inicio.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="relatorio.html">Relatório</a>
+                        <a class="nav-link" href="relatorio.html">Relatório</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pesquisa-1.php">Pesquisa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sair.php">Sair</a>
-                    </li>
+                
                 </ul>
             </div>
         </nav>
@@ -41,20 +39,20 @@ session_start();
         <div class="container mt-4 mb-4 p-4 rounded-3 bg-light shadow" style="max-width: 800px;">
             <h1>Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
             <h2>Pesquisa socioeconômica</h2>
-            <p>Esta pesquisa tem como intuito coletar dados sobre a situação dos alunos da UniRuy.</p><br>
-            <p>Sobre a pesquisa:</p>
+            <p class="um">Esta pesquisa tem como intuito coletar dados sobre a situação dos alunos da UniRuy.</p><br>
+            <p class="um">Sobre a pesquisa:</p>
             <ul>
                 <li>coleta de informaçoes basicas</li>
                 <li>coleta em relação a faculdade</li>
                 <li>coleta em relação ao financeiro</li>
             </ul>
-            <h3>Escolha uma pesquisa</h3>
+            <h3 class="dois ">Escolha uma pesquisa</h3>
             <ol>
                 <li><a href="/persistence/pesquisa-1.php">Primeira Pesquisa</a></li>
            
             </ol>
 
-            <p>No momento, esta é a única pesquisa disponível.</p>
+            <p class="um">No momento, esta é a única pesquisa disponível.</p>
         
         </div>
 

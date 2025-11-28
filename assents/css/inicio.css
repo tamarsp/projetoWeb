@@ -23,11 +23,7 @@ p {
 
 ol{
     margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-li{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 ol li a{
@@ -39,6 +35,7 @@ ol li a{
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 2%;
     background-color: #3498db;
+
 }
 
 a:hover {
@@ -47,3 +44,30 @@ a:hover {
     background-color: #fff;
 }
 
+.um{
+    font-size: 1.2rem;  
+}
+
+.dois{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+} 
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #e2e6ea;
+    border-radius: 5px;
+}
