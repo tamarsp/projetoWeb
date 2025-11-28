@@ -51,7 +51,7 @@ if(isset($_SESSION['usuario'])){
     <main>
         
         <!--Inicio login-->
-        <div id="login">
+        <div id="login ">
             <h1 class="text-center pt-5">Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
             <div class="container mt-5 mb-5 p-4 rounded-3 bg-light shadow" style="max-width: 600px;">
                 <div id="login-row" class="row justify-content-center align-items-center h-100 ">

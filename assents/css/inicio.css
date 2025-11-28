@@ -32,15 +32,18 @@ li{
 
 ol li a{
     text-decoration: none;
-    color: #3498db;
+    color: #fff;
     padding: 10px;
     border: 1px solid #3498db;
     border-radius: 5%;
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 2%;
-
+    background-color: #3498db;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #2980b9;
+    background-color: #fff;
 }
+
