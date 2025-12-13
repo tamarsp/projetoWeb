@@ -1,101 +1,75 @@
 <?php
 session_start();
-if(isset($_SESSION['usuario'])){
-    header('Location: inicio.html');
-    exit();
-}
+//require_once __DIR__ . './../configuracao/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="../bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assents/css/index.css">
+    <link rel="icon" href="/assents/images/lupa.ico" type="image/x-icon">
+    <title>Inicio</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assents/css/index.css"> 
 </head>
-
 <body>
-
-    <div class="preloader" id="preloader">
-        <div class="loader" id="loader"></div>
-    </div>
-
-    <header>
-        <!--Inicio do menu-->
-        <nav class="navbar navbar-expand-lg bg-body-wyden container-fluid">
-            <div style="justify-content:space-between;">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:aliceblue" href="Informacao.html">Informações</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:aliceblue" href="cadastro.php">Cadastro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:aliceblue" href="contato.php">Contato</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:aliceblue" href="inicio.html"><img alt="logo wyden" src="../model/Wyden.svg" style="justify-content:flex-end; margin-right: 15px;"></a>
-                    </li>
-                                        
-                </ul>
-            </div>
-        </nav>
-        <!--Fim do menu-->
-    </header>
-    <main>
-        
-        <!--Inicio login-->
-        <div id="login ">
-            <h1 class="text-center pt-5 text-info">Bem-vindo <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : ''; ?></h1>
-            <div class="container mt-5 mb-5 p-4 rounded-3 bg-light shadow" style="max-width: 600px;">
-                <div id="login-row" class="row justify-content-center align-items-center h-100 ">
-                    <div id="login-column" class="col-md-6">
-                        <div id="login-box" class="col-md-12">
-                            <?php
-                            if(isset($_SESSION['erro'])){
-                                echo '<div class="alert alert-danger text-center" role="alert">'.$_SESSION['erro'].'</div>';
-                                unset($_SESSION['erro']);
-                                if(isset($_SESSION['sucesso'])){
-                                    echo '<div class="alert alert-success text-center" role="alert">'.$_SESSION['sucesso'].'</div>';
-                                    unset($_SESSION['sucesso']);
-                                }
-                            }
-                            ?>
-                            <form id="login-form" class="form " action="../controller/loginController.php" method="post">
-                                <h3 class="text-center text-info">Login</h3>
-                                <div class="form-group">
-                                    <label for="Email" class="text-info ">Email:</label><br>
-                                    <input type="text" name="email" id="Email" class="form-control" required>
-                                    <span class="text-danger">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Senha" class="text-info">Senha:</label><br>
-                                    <input type="password" name="senha" id="Senha" class="form-control" required >
-                                    <span class="text-danger">
-                                </div>
-                                <div id="register-link" class="text-right">
-                                    <button type="submit" class="btn btn-info btn-block col-md-6 ">Login</button>
-                                    <a href="cadastro.php" class="text-info">Cadastrar-se</a>
-                                </div>
-                             
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--menu-->
+    <div>
+        <div>
+            <header>
+                <nav>
+                    <li class="active "><a href="/login.php">Login</a></li>
+                    <li class="active"><a href="/sobre.php">Sobre</a></li>
+                    <li class="active"><a href="/cadastro.php">Cadastro</a></li>
+                </nav>
+            </header>
+            <br>
         </div>
-            <!--Fim do login-->         
-    </main>
-    <footer>
-
+        <!--fim menu-->
+        <!--conteúdo-->
+        <div>
+            <main>
+                <h1>Seja Bem-vindo, </h1>
+                <p>
+                    <h2>Objetivo Principal</h2>
+                    Este questionário faz parte de uma pesquisa crucial para compreender e mitigar os desafios enfrentados por estudantes da área de tecnologia no Brasil.
+                    <ol type="1">
+                        <h3>Nosso objetivo é coletar dados focados em duas áreas principais:</h3>
+                        <li>Desafios Acadêmicos: Dificuldades com o conteúdo, métodos de ensino e recursos da sua instituição.</li>
+                        <li>Desafios Socioeconômicos: Impacto da conciliação entre estudo/trabalho, acesso à tecnologia e pressão financeira.</li>
+                    </ol>
+                </p>
+                <p>
+                    <h2>Por Que Sua Resposta é Importante?</h2>
+                    <ul>
+                        <h3>Sua participação é fundamental para fornecer ** insights reais e valiosos** que serão utilizados por:</h3>
+                        <li>Instituições de Ensino: Para ajustar currículos e criar programas de apoio mais eficazes (aulas de reforço, tutoria).</li>
+                        <li>Setor Público: Para informar a criação de políticas de auxílio e bolsas mais justas.</li>
+                        <li>Empresas de Tecnologia: Para desenvolver programas de estágio e trainee mais inclusivos.</li>
+                    </ul>
+                </p>
+                <p>
+                    Ao compartilhar sua experiência, você contribui diretamente para a melhoria da formação da próxima geração de profissionais de tecnologia, garantindo chances mais equitativas de sucesso.
+                </p>
+                <p>
+                    Levará apenas alguns minutos para responder. Sua voz faz a diferença!
+                </p>
+            </main>
+            <!--fim conteúdo-->
+        </div>
+    </div>
+    <!--rodapé-->
+    <footer>    
+        <p>© 2025 Todos os direitos reservados.</p>
+        <p>
+            <a href="https://github.com/tamarsp/projetoWeb"><img src="../assents/images/githubimg.png" alt="github" width="100" height="100"></a>
+        </p>
     </footer>
-    <script src="../assents/js/preloader.js"></script>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <script src="/assents/js/preloader.js"></script>
 </body>
-
 </html>
