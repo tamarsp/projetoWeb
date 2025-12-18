@@ -10,7 +10,7 @@ session_start();
     <title>Cadastro</title>
     <link rel="icon" href="/assents/images/lupa.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assents/css/cadastro.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
